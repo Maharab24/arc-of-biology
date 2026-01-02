@@ -9,6 +9,10 @@ import StudentReview from '../components/StudentReview';
 function Home() {
   const location = useLocation();
   const navigate = useNavigate();
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+  
 
   useEffect(() => {
     if (location.hash) {
