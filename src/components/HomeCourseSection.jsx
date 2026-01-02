@@ -67,7 +67,7 @@ const HomeCourseSection = ({ id }) => {
 
   return (
     <div
-      id={id}
+      id={"courses"}
       ref={containerRef}
       className="min-h-screen  py-20 px-4 sm:px-8 overflow-hidden relative scroll-mt-24"
     >

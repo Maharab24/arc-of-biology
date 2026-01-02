@@ -394,36 +394,7 @@ function Footer() {
           </motion.div>
         </div>
 
-        {/* Accreditation badges */}
-        <motion.div
-          className="flex flex-wrap justify-center gap-6 mt-12 pt-8 border-t border-emerald-800/30"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.4 }}
-        >
-          {[
-            { text: 'NEET Certified', color: 'from-emerald-500 to-teal-600' },
-            { text: 'Govt. Approved', color: 'from-cyan-500 to-blue-600' },
-            { text: '100% Success', color: 'from-amber-500 to-orange-600' },
-            { text: 'Expert Faculty', color: 'from-purple-500 to-pink-600' }
-          ].map((badge, index) => (
-            <motion.div
-              key={index}
-              className={`px-4 py-2 rounded-full bg-gradient-to-r ${badge.color} text-white text-xs font-bold shadow-lg`}
-              whileHover={{ scale: 1.05, y: -2 }}
-              animate={{
-                y: [0, -5, 0],
-                transition: {
-                  duration: 3,
-                  repeat: Infinity,
-                  delay: index * 0.5
-                }
-              }}
-            >
-              {badge.text}
-            </motion.div>
-          ))}
-        </motion.div>
+     
       </div>
     </motion.footer>
   );

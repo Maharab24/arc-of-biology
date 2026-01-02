@@ -75,7 +75,7 @@ const Navbar = () => {
 
           {/* Right-aligned Enroll button */}
           <div className="hidden lg:block">
-            <Link to="/enroll">
+            <Link to="/login">
               <button
                 className={`relative glow-button px-7 py-3 rounded-full font-bold
                 transition-all duration-500 hover:scale-105 shadow-lg transform
@@ -84,7 +84,7 @@ const Navbar = () => {
                     : 'bg-white text-emerald-700 hover:shadow-emerald-200'
                   }`}
               >
-                Enroll Now
+                Login / Register
                 <span className="absolute -top-1 -right-1 w-3 h-3 bg-white rounded-full animate-ping opacity-75"></span>
               </button>
             </Link>

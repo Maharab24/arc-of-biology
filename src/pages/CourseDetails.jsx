@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -21,6 +21,7 @@ import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 
 const CourseDetails = () => {
   const { courseId } = useParams();
+  const navigate = useNavigate();
   const [course, setCourse] = useState(null);
   const [loading, setLoading] = useState(true);
   const [activeModule, setActiveModule] = useState(0);
@@ -59,6 +60,11 @@ const CourseDetails = () => {
     setEnrolled(true);
     setShowEnrollmentModal(false);
     // In a real app, you would send enrollment data to backend
+  };
+
+  const handleGoToDashboard = () => {
+    // Redirect to login page when "Go to Dashboard" is clicked
+    navigate("/login");
   };
 
   const glowAnimation = {
@@ -181,7 +187,7 @@ const CourseDetails = () => {
         </motion.div>
       ))}
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-7xl mx-auto relative z-10 mt-10">
         {/* Breadcrumb */}
         <div className="mb-8">
           <nav className="flex items-center text-sm text-gray-600">
@@ -309,7 +315,7 @@ const CourseDetails = () => {
 
                   {/* Enrollment Button */}
                   <button
-                    onClick={enrolled ? null : handleEnroll}
+                    onClick={enrolled ? handleGoToDashboard : handleEnroll}
                     className={`w-full py-4 rounded-xl font-semibold transition-all duration-300 ${
                       enrolled
                         ? "bg-gradient-to-r from-emerald-500 to-cyan-500 text-white"
@@ -320,14 +326,6 @@ const CourseDetails = () => {
                   </button>
 
                   {/* Secondary Actions */}
-                  <div className="flex gap-3 mt-4">
-                    <button className="flex-1 py-3 border border-gray-300 rounded-xl font-medium hover:bg-gray-50 transition-colors">
-                      Add to Wishlist
-                    </button>
-                    <button className="flex-1 py-3 border border-gray-300 rounded-xl font-medium hover:bg-gray-50 transition-colors">
-                      Share Course
-                    </button>
-                  </div>
 
                   <p className="text-center text-sm text-gray-500 mt-4">
                     14-day money-back guarantee

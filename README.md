@@ -1,36 +1,43 @@
-#  My Portfolio Website
+# ARC of Biology – Online Learning Platform
 
-Welcome to my personal portfolio website! This project showcases my work, skills, and passion across various fields including Web Development, Artificial Intelligence, IoT, Research, and more.
-----
-# Live link: https://maharabhossainopi.netlify.app/
-----
-##  Features
+ARC of Biology is a modern, interactive online education platform designed to provide high-quality biology courses for **HSC, Varsity, Medical, Olympiad, and University-level students**.
+The platform focuses on making biology learning **clear, structured, and engaging** for students at every stage.
 
-- ✅ **Modern Design** – Clean, attractive, and minimal interface.
-- ✅ **Multi-Page Navigation** – Includes About, Skills, Projects, Contact, and category-wise                                        project pages.
-- ✅ **Smooth Animations** – Powered by Framer Motion for an engaging user experience.
-- ✅ **Responsive Layout** – Works perfectly on mobile, tablet, and desktop devices.
-- ✅ **EmailJS Contact Form** – Users can send you messages directly from the site.
-- ✅ **Custom API Integration** – Easy extension with backend services.
-- ✅ **Hash Link Routing** – Redirects `/projects` to `/#projects` on the Home page using React                               Router.
-- ✅ **Modular Codebase** – Well-structured and easy to maintain.
+---
 
-##  Technologies Used
+## 🌐  Live Website
+🔗 comming soon
 
-- **React** – For building fast and interactive user interfaces.
-- **Tailwind CSS** – To create clean, responsive, and modern designs.
-- **Framer Motion** – For smooth animations and motion effects.
-- **EmailJS** – To send emails directly from the frontend (Contact Form).
-- **Custom API** – Integrated backend services for enhanced functionality.
-- **Responsive Design** – Fully mobile-friendly and responsive UI.
+---
+
+## ✨ Features
+
+- ✅ Modern & clean user interface
+- ✅ Course-based architecture (HSC, Varsity, Medical, Olympiad, etc.)
+- ✅ Dynamic course details pages
+- ✅ Smooth animations using Framer Motion
+- ✅ Fully responsive design (mobile, tablet, desktop)
+- ✅ Search and filter functionality for courses
+- ✅ Grid and list view toggle for courses
+- ✅ Smooth scrolling and hash-based routing
+- ✅ Modular and maintainable React codebase
+
+---
+
+## 📚 Courses Offered
 
 
-## Contact Form
+All course information is dynamically loaded from a centralized JSON file.
 
-- Powered by **EmailJS**
-- Users can directly send messages to your email without a backend
+---
 
-## Responsive Design
+## 🧠 Technologies Used
 
-- Optimized for desktops, tablets, and smartphones
-- Built with Tailwind's mobile-first utility classes
+- **React** – Component-based frontend development
+- **React Router** – Multi-page and dynamic routing
+- **Tailwind CSS** – Modern and responsive UI styling
+- **Framer Motion** – Animations and transitions
+- **JSON Data System** – Centralized course data management
+- **Responsive Design** – Mobile-first layout approach
+
+---
