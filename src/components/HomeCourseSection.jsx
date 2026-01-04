@@ -285,13 +285,17 @@ const HomeCourseSection = ({ id }) => {
           className="text-center mt-16"
         >
           <p className="text-gray-600 mb-4">Can't find what you're looking for?</p>
-          <motion.button
+         <Link
+            to="/Allcourse"
+          >
+             <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="px-8 py-3 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-semibold rounded-full shadow-lg shadow-emerald-200 hover:shadow-xl hover:shadow-emerald-300 transition-all duration-300"
           >
             View All Courses
           </motion.button>
+          </Link>
         </motion.div>
       </div>
     </div>
